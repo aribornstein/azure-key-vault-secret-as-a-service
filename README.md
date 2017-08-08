@@ -3,6 +3,7 @@
 A scalable docker service for querying azure key vaults for secrets using service provider credentials.
 
 ## How to Install 
+
 1. Clone the "azure-key-vault-secret-as-a-service" repo
 ```
 git clone https://github.com/CatalystCode/azure-key-vault-secret-as-a-service.git

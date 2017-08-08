@@ -1,19 +1,18 @@
 # azure-key-vault-secret-as-a-service
 
-A docker service for querying azure key vaults for secrets 
+A scalable docker service for querying azure key vaults for secrets using service provider credentials.
 
 ## How to Install 
 Git clone the repo then build the Azure KeyVault Secret Service api docker image using 
 
 ```
-Copy and paste docker build command here
+ docker build -t kv-service .
 ```
 
 Than run the Azure KeyVault Secret Service api docker image with
 
 ```
-Copy and paste docker run command here
-
+ docker run kv-service
 ```
 
 ## How to Use 

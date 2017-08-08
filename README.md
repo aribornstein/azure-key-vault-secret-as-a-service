@@ -8,19 +8,14 @@ A scalable docker service for querying azure key vaults for secrets using Azure 
 ```
 git clone https://github.com/CatalystCode/azure-key-vault-secret-as-a-service.git
 ```
-2. Add Service Provider Credentials To Dockerfile.
-```
-ENV AZURE_TENANT_ID {PUT_AZURE_TENANT_ID_HERE}
-ENV AZURE_CLIENT_ID {PUT_AZURE_CLIENT_ID_HERE}
-ENV AZURE_CLIENT_SECRET {PUT_AZURE_CLIENT_SECRET_HERE}
-ENV AZURE_SUBSCRIPTION_ID {PUT_AZURE_SUBSCRIPTION_ID_HERE}
+
 ```
 2. Build the Azure KeyVault Secret Service api docker image using 
 
 ```
  docker build -t kv-service .
 ```
-Or retrieve the image from dockerhub from the "" endpoint
+Or retrieve the image from dockerhub from the "catalystcode/azure-key-vault-secret-as-a-service" endpoint
 
 3. Run the Azure KeyVault Secret Service api docker image with the correct service provider credentials
 

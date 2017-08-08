@@ -12,14 +12,14 @@ git clone https://github.com/CatalystCode/azure-key-vault-secret-as-a-service.gi
 2. Build the Azure KeyVault Secret Service api docker image using 
 
 ```
- docker build -t kv-service .
+ docker build -t catalystcode/azure-key-vault-secret-as-a-service .
 ```
 Or retrieve the image from dockerhub from the "catalystcode/azure-key-vault-secret-as-a-service" endpoint
 
 3. Run the Azure KeyVault Secret Service api docker image with the correct service provider credentials
 
 ```
-docker run -e AZURE_TENANT_ID='azure_tenant_id' -e AZURE_CLIENT_ID='azure_client_id' -e AZURE_CLIENT_SECRET='azure_client_secret' -e AZURE_SUBSCRIPTION_ID='azure_subscription_id' kv-service
+docker run -e AZURE_TENANT_ID='azure_tenant_id' -e AZURE_CLIENT_ID='azure_client_id' -e AZURE_CLIENT_SECRET='azure_client_secret' -e AZURE_SUBSCRIPTION_ID='azure_subscription_id' catalystcode/azure-key-vault-secret-as-a-service
 ```
 
 ## How to Use 

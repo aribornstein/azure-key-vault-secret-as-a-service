@@ -52,9 +52,9 @@ def searchSecret(secret_name, secret_version = ''):
 if __name__ == "__main__":
     msg = 'Welcome to the keyvault manager api you can choose to get a secret from a vault using python AzureKeyVaultSecretService.py Get_Secret {Vault_Name} {Secret_Name} \n Or search all vaults for a secret with python AzureKeyVaultSecretService.py Search_Secret {Secret_Name}'    
     try:
-        if (sys.argv[1] == 'Get_Secret'):
+        if (sys.argv[1].lower() == 'get_secret'):
             msg = getSecret(sys.argv[2], sys.argv[3])
-        if (sys.argv[1] == 'Search_Secret'):
+        if (sys.argv[1].lower() == 'search_secret'):
             msg = searchSecret(sys.argv[2])
         print(msg)
     except:

@@ -9,7 +9,6 @@ A scalable docker service for querying azure key vaults for secrets using Azure 
 git clone https://github.com/CatalystCode/azure-key-vault-secret-as-a-service.git
 ```
 
-```
 2. Build the Azure KeyVault Secret Service api docker image using 
 
 ```

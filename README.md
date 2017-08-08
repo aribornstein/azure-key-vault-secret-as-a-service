@@ -1,4 +1,4 @@
-# azure-key-vault-secret-as-a-service
+# Azure Key Vault (Secrets As A Service)
 
 A scalable docker service for querying azure key vaults for secrets using service provider credentials.
 

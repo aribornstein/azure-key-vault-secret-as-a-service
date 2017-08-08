@@ -15,16 +15,17 @@ ENV AZURE_CLIENT_ID {PUT_AZURE_CLIENT_ID_HERE}
 ENV AZURE_CLIENT_SECRET {PUT_AZURE_CLIENT_SECRET_HERE}
 ENV AZURE_SUBSCRIPTION_ID {PUT_AZURE_SUBSCRIPTION_ID_HERE}
 ```
-3. Build the Azure KeyVault Secret Service api docker image using 
+2. Build the Azure KeyVault Secret Service api docker image using 
 
 ```
  docker build -t kv-service .
 ```
+Or retrieve the image from dockerhub from the "" endpoint
 
-4. Run the Azure KeyVault Secret Service api docker image with
+3. Run the Azure KeyVault Secret Service api docker image with the correct service provider credentials
 
 ```
- docker run kv-service
+docker run -e AZURE_TENANT_ID='azure_tenant_id' -e AZURE_CLIENT_ID='azure_client_id' -e AZURE_CLIENT_SECRET='azure_client_secret' -e AZURE_SUBSCRIPTION_ID='azure_subscription_id' kv-service
 ```
 
 ## How to Use 
